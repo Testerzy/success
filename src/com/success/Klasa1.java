@@ -32,7 +32,7 @@ public class Klasa1 {
 		System.setProperty("webdriver.chrome.driver",
 				"c:\\selenium\\webdriver\\chromedriver.exe");
 	
-		driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), DesiredCapabilities.firefox());
+		driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), DesiredCapabilities.chrome());
 		baseUrl = "http://seleniumhq.org/";
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().timeouts().setScriptTimeout(3, TimeUnit.SECONDS);
